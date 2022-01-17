@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/main")
 public class AzureAppController {
     @GetMapping("/")
     public ResponseEntity<String> get(){
-        return ResponseEntity.ok("Hello Azure!!!");
+        return ResponseEntity.ok("Hello main Azure!!!");
     }
 }
