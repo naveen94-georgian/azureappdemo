@@ -9,8 +9,8 @@ import org.springframework.web.servlet.view.RedirectView;
 public class AzureappdemoApplication {
 
 	@GetMapping("/")
-	public RedirectView redirectReq(){
-		return new RedirectView("/main");
+	public String redirectReq(){
+		return "main";
 	}
 
 	public static void main(String[] args) {
